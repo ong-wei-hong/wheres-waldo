@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+/* reset.css */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* settings, helpers */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+	font-family: Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+	min-width: 1056px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* header */
+header {
+	background-color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.flex-row {
+	display: flex;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.margin-top-1 {
+	margin-top: 1em;
+}
+
+.white-words {
+	color: #FFF;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-items: center;
+	align-items: center;
+}
+
+.to-find {
+	border: 1px solid #F00;
+}
+
+.found {
+	border: 1px solid #0F0;
+}
+
+.flex-end{
+	align-self: flex-end
+}
+/* game */
+.game-wrapper {
+	width: 1024px;
+	height: 768px;
+	margin: 1em auto;
+}
+
+.game {
+	position: relative;
+}
+
+.target {
+	position: absolute;
+}
+
+.target-0 {
+	top: 143px;
+	left: 160px;
+	height: 60px;
+	width: 40px;
+}
+
+.target-1 {
+	top: 15px;
+	left: 573px;
+	height: 34px;
+	width: 25px;
+}
+
+.target-2 {
+	top: 448px;
+	left: 469px;
+	height: 34px;
+	width: 47px;
+}
+
+.target-3 {
+	top: 436px;
+	left: 26px;
+	height: 55px;
+	width: 20px;
+}
+
+.target-4 {
+	top: 360px;
+	left: 610px;
+	height: 35px;
+	width: 20px;
+}
+
+.seen {
+	border: 2px solid #000;
+}
+
+.flex-end {
+	justify-content: flex-end;;
+}
+
+/* Win Form */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+.winform-bg {
+	background-color: #FFF;
+	padding: 2em;
+	z-index: 3;
+}
+
+.text-center {
+	text-align: center;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: bold;
 }

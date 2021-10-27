@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "wheres-waldo-9ccde",
+    "staging": "wheres-waldo-9ccde"
+  },
+  "targets": {}
+}
