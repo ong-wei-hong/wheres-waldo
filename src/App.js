@@ -142,9 +142,9 @@ const Header = ({ found, name, highScore }) => {
 				<div className="margin-top-1 grid">
 					<Target0 found={found[0]} />
 					<Target1 found={found[1]} />
-					<Target2 found={found[2]} />
+					<Target2 found={found[4]} />
 					<Target3 found={found[3]} />
-					<Target4 found={found[4]} />
+					<Target4 found={found[2]} />
 					<p className="white-words">Waldo</p>
 					<p className="white-words">Whitebeard</p>
 					<p className="white-words">Waldo fan 1</p>

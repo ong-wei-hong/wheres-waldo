@@ -116,11 +116,11 @@ h1 {
 }
 
 .to-find {
-	border: 1px solid #F00;
+	border: 2px solid #F00;
 }
 
 .found {
-	border: 1px solid #0F0;
+	border: 2px solid #0F0;
 }
 
 .flex-end{
